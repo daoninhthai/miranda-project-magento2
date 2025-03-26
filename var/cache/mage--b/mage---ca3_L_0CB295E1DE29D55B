@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1742980107;s:6:"expire";i:1829380107;s:4:"tags";s:67:"ca3_MARKETPLACE_PRODUCTS_GRID,ca3_LAYOUT_GENERAL_CACHE_TAG,ca3_MAGE";}
+{"pageLayout":"","layout":"<body>\n   <block class=\"Magento\\Backend\\Block\\Admin\\Formkey\" name=\"formkey\" as=\"formkey\" template=\"Magento_Backend::admin\/formkey.phtml\"\/>\n<\/body>\n<update handle=\"formkey\"\/>\n<container name=\"root\" label=\"Root\">\n   <block class=\"Magetop\\Marketplace\\Block\\Adminhtml\\Products\\Grid\" name=\"magetop_marketplace_products.products.grid\"\/>\n<\/container>\n"}
