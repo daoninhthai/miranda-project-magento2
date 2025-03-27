@@ -114,7 +114,7 @@ abstract class Productactions extends \Magento\Backend\App\Action
      * @return void
      */
     protected function _gridAction()
-    { 
+    {
         $this->_view->loadLayout(false);
         $this->_view->renderLayout();
     }
@@ -283,9 +283,10 @@ abstract class Productactions extends \Magento\Backend\App\Action
      * @return void
      */
     protected function _massStatusAction()
-    {
+    {   echo "456789";
+        die;
         $ids = $this->getRequest()->getParam($this->_idKey);
-        
+
         if (!is_array($ids)) {
             $ids = [$ids];
         }
@@ -315,10 +316,10 @@ abstract class Productactions extends \Magento\Backend\App\Action
                 $product = $objectManager->create('\Magento\Catalog\Api\ProductRepositoryInterface')->getById($sellerProductModel->getProductId());
                 $product->setStatus($status);
                 $objectManager->create('\Magento\Catalog\Api\ProductRepositoryInterface')->save($product);
-                
+
                 $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
                 $connection = $resource->getConnection();
-                $tableName = $resource->getTableName('multivendor_product'); //gives table name with prefix 
+                $tableName = $resource->getTableName('multivendor_product'); //gives table name with prefix
                 $sql = "Select * FROM " . $tableName . " WHERE product_id = " . $sellerProductModel->getProductId();
                 $result = $connection->fetchAll($sql); // gives associated array, table fields as
                 if($status == 1){

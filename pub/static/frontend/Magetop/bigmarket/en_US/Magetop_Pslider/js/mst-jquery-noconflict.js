@@ -1,1 +1,0 @@
-var $mst = jQuery.noConflict();

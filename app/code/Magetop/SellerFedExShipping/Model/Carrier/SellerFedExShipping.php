@@ -527,7 +527,7 @@ class SellerFedExShipping extends \Magento\Fedex\Model\Carrier
      * @param \Magento\Framework\DataObject $request
      * @return \Magento\Framework\DataObject
      */
-    protected function _doShipmentRequest(\Magento\Framework\DataObject $request)
+    protected function _doShipmentRequest(\Magento\Framework\DataObject $request) : \Magento\Framework\DataObject
     {
         try {
             $this->_prepareShipmentRequest($request);
@@ -838,7 +838,7 @@ class SellerFedExShipping extends \Magento\Fedex\Model\Carrier
      * @param array $data
      * @return bool
      */
-    public function rollBack($data)
+    public function rollBack($data): bool
     {
         $requestData = $this->_getVendorAuthDetails($data[0]["vendor_id"]);
         $requestData['DeletionControl'] = 'DELETE_ONE_PACKAGE';

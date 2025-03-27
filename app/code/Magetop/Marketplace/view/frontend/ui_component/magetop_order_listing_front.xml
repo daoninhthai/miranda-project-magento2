@@ -56,7 +56,7 @@
 							<item name="label" xsi:type="string" translate="true">Excel XML</item>
 							<item name="url" xsi:type="string">marketplace/mui/gridToXml</item>
 						</item>
-						
+
 					</item>
 				</item>
 			</argument>
@@ -171,7 +171,7 @@
                     </item>
                 </item>
             </item>
-        </argument> 
+        </argument>
 		<selectionsColumn name="ids">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -223,7 +223,7 @@
                     <item name="label" xsi:type="string" translate="true">Ship-to Name</item>
                 </item>
             </argument>
-        </column> 
+        </column>
         <!--<column name="base_grand_total" class="Magento\Sales\Ui\Component\Listing\Column\Price">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -231,7 +231,7 @@
                     <item name="label" xsi:type="string" translate="true">Grand Total (Base)</item>
                 </item>
             </argument>
-        </column>--> 
+        </column>-->
         <!--<column name="grand_total" class="Magetop\Marketplace\Ui\Component\Listing\Column\Seller\Orders\GrandTotalPurchased">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -260,7 +260,7 @@
                     <item name="label" xsi:type="string" translate="true">Billing Address</item>
                 </item>
             </argument>
-        </column> 
+        </column>
         <column name="shipping_address" class="Magento\Sales\Ui\Component\Listing\Column\Address">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -309,7 +309,7 @@
                     <item name="label" xsi:type="string" translate="true">Subtotal</item>
                 </item>
             </argument>
-        </column> 
+        </column>
         <column name="shipping_and_handling" class="Magento\Sales\Ui\Component\Listing\Column\Price">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
